@@ -42,7 +42,7 @@ public class UserEntity {
     protected void onCreate() {
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
-        this.enabled = false; // 계정이 기본적으로 활성화되지 않도록 설정
+        this.enabled = true; // 계정이 기본적으로 활성화되지 않도록 설정
         this.accountNonExpired = true; // 계정이 기본적으로 만료되지 않도록 설정
         this.accountNonLocked = true; // 계정이 기본적으로 잠겨 있지 않도록 설정
         this.credentialsNonExpired = true; // 자격 증명이 기본적으로 만료되지 않도록 설정

@@ -20,7 +20,7 @@ public class UserService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    public void createUser(String username, String email, String password, String role, String socialProvider , String phone , String address) {
+    public void createUser(String username, String email, String password, String role, String socialProvider , String phone ) {
 
         if( username != null && email != null && password != null && role != null && socialProvider != null && phone != null ) {
 
@@ -37,7 +37,6 @@ public class UserService {
             userRepository.save(user);
         } else {
             throw new IllegalArgumentException("필드가 비어 있습니다.");
-
         }
 
     }
