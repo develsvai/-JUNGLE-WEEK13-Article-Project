@@ -30,8 +30,7 @@ public class UserController {
                     userDTO.getPassword(),
                     userDTO.getRole(),
                     userDTO.getSocialProvider(),
-                    userDTO.getPhoneNumber(),
-                    userDTO.getAddress()
+                    userDTO.getPhoneNumber()
             );
 
             Map<String, String> response = new HashMap<>();
